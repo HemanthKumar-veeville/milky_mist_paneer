@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Milkymist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Helvetica-Regular";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/656791b77f52524f6a44afda/fonts/helvetica-regular.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "Helvetica-Bold";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/61937676c1b2ee0850725a54/fonts/helvetica-bold.otf")
+          format("opentype");
+      }
+
+      :root {
+        --font-primary: "Montserrat", "Helvetica-Regular", -apple-system,
+          BlinkMacSystemFont, sans-serif;
+      }
+    </style>
+    <link href="tailwind.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./src/index.tsx"></script>
+  </body>
+</html>
