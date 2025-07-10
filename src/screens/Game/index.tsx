@@ -94,7 +94,7 @@ export const GameIntro = (): JSX.Element => {
         <div className="flex flex-col items-center">
           <CharacterCard
             name="Disco Dosa"
-            image="https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001785.png"
+            image="https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001789.png"
             position="right"
             onClick={() => handleCharacterSelect("Disco Dosa")}
           />
@@ -108,7 +108,7 @@ export const GameIntro = (): JSX.Element => {
           </div>
           <CharacterCard
             name="Incredible Idli"
-            image="https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001794.png"
+            image="https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001791.png"
             position="left"
             onClick={() => handleCharacterSelect("Incredible Idli")}
           />
