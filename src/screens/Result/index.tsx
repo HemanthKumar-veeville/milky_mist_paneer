@@ -27,7 +27,7 @@ const deliveryApps = [
     className: "w-[39px] h-[39px]",
   },
   {
-    logo: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/zepto-logo-app-icon.png.png",
+    logo: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/blinkit-logo.png+(1).png",
     alt: "Blinkit logo png",
     className: "w-[42px] h-[42px] ml-4",
   },
