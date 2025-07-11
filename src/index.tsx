@@ -5,6 +5,7 @@ import { Layout } from "./components/ui/Layout";
 import { Screen } from "./screens/Screen/Screen";
 import { GameIntro } from "./screens/Game";
 import { Play } from "./screens/Play";
+import { FinalYogurt } from "./screens/Result";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/play",
         element: <Play />,
+      },
+      {
+        path: "/result",
+        element: <FinalYogurt />,
       },
     ],
   },

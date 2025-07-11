@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const videoUrl =
   "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/out+(1).mp4";
@@ -7,6 +8,7 @@ const VideoPlayer = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const navigate = useNavigate();
 
   // Load video when component mounts
   useEffect(() => {
@@ -19,17 +21,22 @@ const VideoPlayer = () => {
       setError("Failed to load video. Please try again.");
       setIsLoading(false);
     };
+    const handleEnded = () => {
+      navigate("/result");
+    };
 
     video.addEventListener("loadstart", handleLoadStart);
     video.addEventListener("loadeddata", handleLoadedData);
     video.addEventListener("error", handleError);
+    video.addEventListener("ended", handleEnded);
 
     return () => {
       video.removeEventListener("loadstart", handleLoadStart);
       video.removeEventListener("loadeddata", handleLoadedData);
       video.removeEventListener("error", handleError);
+      video.removeEventListener("ended", handleEnded);
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="relative w-full h-auto overflow-hidden bg-gray-100">
@@ -50,7 +57,6 @@ const VideoPlayer = () => {
         className="w-full h-auto max-w-full"
         playsInline
         autoPlay
-        loop
       >
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
