@@ -26,7 +26,7 @@ const CharacterCard = ({
         className={`${
           position === "right"
             ? "w-[150px] h-[130px] object-contain"
-            : "w-[205px] h-[130px] object-cover"
+            : "w-[205px] h-[130px] object-contain"
         } transition-transform duration-200`}
         alt={`${name} character`}
         src={image}

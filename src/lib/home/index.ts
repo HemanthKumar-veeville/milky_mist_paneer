@@ -7,18 +7,18 @@ type Character = {
 
 export const CHARACTERS: Character[] = [
   {
-    name: "Disco Dosa",
-    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001783.png",
+    name: "Awesome Appam",
+    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001796.png",
     position: "right",
   },
   {
-    name: "Incredible Idli",
-    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001782.png",
+    name: "Puffy Puttu",
+    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001797.png",
     position: "left",
   },
   {
-    name: "Vortex Vada",
-    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001784.png",
+    name: "Ultimate Uttapam",
+    image: "https://veeville-website.s3.ap-south-1.amazonaws.com/milky_mist/Group+1000001798.png",
     position: "right",
   },
 ];
